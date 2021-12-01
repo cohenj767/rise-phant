@@ -6,7 +6,6 @@ import Navbar from "./components/navbar";
 import Home from "./components/pages/home";
 import Roster from "./components/pages/roster";
 import Phantoms from "./components/pages/phantoms";
-import About from "./components/pages/about";
 
 export const pageTransition = {duration: 0.3, ease: [.14,.8,.4,1]};
 export const pageVariants = {
@@ -35,7 +34,6 @@ function App() {
                     <Route exact path="/" element={<Home/>}/>
                     <Route path="/roster" element={<Roster/>}/>
                     <Route path="/phantoms" element={<Phantoms/>}/>
-                    <Route path="/about" element={<About/>}/>
                 </Routes>
             </AnimatePresence>         
     </div>

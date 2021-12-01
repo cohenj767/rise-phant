@@ -5,7 +5,9 @@ import { pageVariants } from '../../App';
 const Home = () => {
     return(
         <motion.main className="content" initial="initial" animate="in" exit="out" variants={pageVariants}>
-            <div>Home</div>
+            <div class="landing">
+            Rise McP | Phantom Tracker
+            </div>
         </motion.main>
     )
 }

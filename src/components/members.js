@@ -6,7 +6,7 @@ export const members = [
 },
 {
     name: "Yycia",
-    role: "Co-Leader",
+    role: "Leader",
     hasPhantom: "false",
 },
 {
@@ -45,7 +45,7 @@ export const members = [
     hasPhantom: "false",
 },
 {
-    name: "Maim9",
+    name: "Maimy9",
     role: "Member",
     hasPhantom: "false",
 },

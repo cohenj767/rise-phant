@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
+
 const NavMenu = {
     hidden: {y: -20, opacity: 0},
     open:{
@@ -20,7 +21,6 @@ const Navbar = () => {
             <ul className="menu">
                 <li><NavLink to="/roster" className={({ isActive }) => isActive ? "current-page-item": ''}>ROSTER</NavLink></li>
                 <li><NavLink to="/phantoms" className={({ isActive }) => isActive ? "current-page-item": ''}>PHANTOMS</NavLink></li>
-                <li><NavLink to="/about" className={({ isActive }) => isActive ? "current-page-item": ''}>ABOUT</NavLink></li>
             </ul>
         </motion.nav>
     )

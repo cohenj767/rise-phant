@@ -1,3 +1,12 @@
+:root {
+    --font-color: #f2f3f4;
+    --base-layer: #071824;
+    --second-layer-transparent: #ffffff20;
+    --third-layer: #374854;
+    --prim-acc-color: #3fc0ac;
+    --prim-acc-color-trans: #3fc0ac85;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +15,16 @@
     font-size: 100%;
     vertical-align: baseline;
     text-decoration: none !important;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'BasierSquare', sans-serif;
     box-sizing: border-box;
     user-select: none;
   }
+
+html {
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
   
 ul {
     list-style: none;
@@ -18,15 +33,11 @@ ul {
 body {
     top: 0;
     left: 0;
-    color: #eeeeee;
-    background-color: #2a2b32;
+    color: var(--font-color);
+    background-color: var(--base-layer);
     text-rendering: optimizeLegibility;
-  }
-.App{
-    width: 100%;
-    height: 100vh;
     overflow: hidden;
-}
+  }
 
 header{
     z-index: 2;
@@ -82,7 +93,7 @@ header{
     display: flex;
     align-items: center;
     -webkit-box-align: center;
-    background: #2a2d32;
+    background: var(--third-layer);
     bottom:0;
     right: 0;
     left:0;
@@ -119,8 +130,8 @@ header{
   }
 
 .menu-toggle-icon:hover > .bar{
-    background: #00b7ff;
-    box-shadow: 0 0 16px #00b7ff85;
+    background: var(--prim-acc-color);
+    box-shadow: 0 0 16px var(--prim-acc-color-trans);
     transition: all .1s cubic-bezier(.14,.8,.4,1); 
 }
   
@@ -155,9 +166,9 @@ header{
 
 .content{
     position: relative;
-    width: 100%;
-    height: 100%;
     padding-top: 8rem;
+    height: 100vh;
+    overflow: auto;
 }
 
 .app-desktop-menu{
@@ -178,7 +189,7 @@ header{
 .menu li a{
     position: relative;
     letter-spacing: .22em;
-    margin: 0 1em;
+    margin: 0 3em;
     display: block;
     color: #eee;
     font-size: 1.1rem;
@@ -208,8 +219,8 @@ header{
     position: absolute;
     transform: scaleX(1);
     opacity: 1;
-    background: #76AE83;
-    box-shadow: 0 0 4px #76AE83;
+    background: var(--prim-acc-color);
+    box-shadow: 0 0 4px var(--prim-acc-color-trans);
     transition: all .2s cubic-bezier(.14,.8,.4,1);
 }
 
@@ -220,26 +231,70 @@ li .current-page-item::after{
     top: 104%;
     width: calc(100% - .15em);
     height: 3px;
-    background: #76AE83;
-    box-shadow: 0 0 4px #76AE83;
+    background: var(--prim-acc-color);
+    box-shadow: 0 0 4px var(--prim-acc-color-trans);
 }
-
-.membersGrid{
-    margin: 1rem 5rem 1rem 5rem;
-    display: grid;
-    grid-gap: 1.2rem 2.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-auto-rows: 10rem;
+.landing{
     height: 100%;
-}
-
-.cardContainer{
-    background-color: #33383f;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    border-radius: 0.5rem;
+}
+
+.membersGrid{
+    justify-content: center;
+    margin: 1rem 7rem 1rem 7rem;
+    display: grid;
+    grid-gap: 2rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 20rem));
+    grid-auto-rows: 10rem;
+}
+
+.cardContainer{
+    padding: 1rem;
+    background-color: var(--second-layer-transparent);
+    display: grid; 
+    grid-template-columns: 25% auto; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0.5rem 0.5rem;
+    border-radius: 0.5rem; 
+    grid-template-areas:
+    "Role Role" 
+    "Head Name"
+    "Head phant"; 
+}
+.Head { grid-area: Head; max-width: 100%;}
+.Name { grid-area: Name; display: flex; gap: 1rem; font-size: 1.1rem; margin-top: 7px;}
+.Role {
+    font-weight: 500; 
+    font-size: 1.1rem;
+    grid-area: Role; 
+    border-bottom: 2px solid;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.phant { grid-area: phant; display: flex; gap: 1rem}
+.phantStatus{
+    height: fit-content;
+    padding: 2px;
+    border-radius: 0.25rem;
+}
+
+
+.cardContainer img{
+    max-height: 80%;
+}
+
+.seperator{
+    content: "";
+    height: 3px;
+    width: 6rem;
+    left: 50%;
+    margin: 0.5rem 0 0.5rem calc(50% - 3rem);
+    transform-origin: center;
+    border-radius: 2rem;
 }
 
 @keyframes top {
