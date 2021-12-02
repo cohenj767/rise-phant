@@ -297,6 +297,25 @@ li .current-page-item::after{
     border-radius: 2rem;
 }
 
+.phantList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 7rem 1rem 7rem;
+    gap: 2rem;
+}
+
+.phantCard{
+    background-color: var(--second-layer-transparent);
+    height: 8rem;
+    border-radius: 1rem;
+    display: grid;
+    padding: 1rem;
+}
+
+.phantCard img{
+    max-height: 100%;
+}
 @keyframes top {
     0% {
       top: 0;

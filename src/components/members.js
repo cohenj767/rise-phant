@@ -2,7 +2,7 @@ export const members = [
 {
     name: "x_Copy",
     role: "Leader",
-    hasPhantom: "false",
+    hasPhantom: "true",
 },
 {
     name: "Yycia",
