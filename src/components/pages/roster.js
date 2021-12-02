@@ -8,7 +8,6 @@ const membersGrid = {
     hidden: {},
     visible: { 
         transition: {
-            delayChildren: 0.25,
             staggerChildren: .08,
             ease: [.14,.8,.4,1]
       }
@@ -44,7 +43,7 @@ function Card({name, role, hasPhantom, background}) {
     var hasPhantomColorText
 
     switch (hasPhantom) {
-        case true:
+        case "true":
             hasPhantomColor = "#55FF55"
             hasPhantomColorText = "#071824"
             break;
