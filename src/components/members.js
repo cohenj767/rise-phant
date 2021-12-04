@@ -89,4 +89,24 @@ export const members = [
     role: "Member",
     hasPhantom: "false",
 },
+{
+    name: "Mxtt",
+    role: "Member",
+    hasPhantom: "false",
+},
+{
+    name: "Thaiharlemc",
+    role: "Member",
+    hasPhantom: "false",
+},
+{
+    name: "Prework",
+    role: "Member",
+    hasPhantom: "false",
+},
+{
+    name: "Liane",
+    role: "Member",
+    hasPhantom: "false",
+},
 ]
