@@ -27,15 +27,15 @@ function App() {
     const location = useLocation();
     return (
     <div className="App">
-            <Header/>
-            <Navbar/>
-                <AnimatePresence exitBeforeEnter>
-                <Routes location={location} key={location.pathname}>
-                    <Route exact path="/" element={<Home/>}/>
-                    <Route path="/roster" element={<Roster/>}/>
-                    <Route path="/phantoms" element={<Phantoms/>}/>
-                </Routes>
-            </AnimatePresence>         
+        <Header/>
+        <Navbar/>
+            <AnimatePresence exitBeforeEnter>
+            <Routes location={location} key={location.pathname}>
+                <Route exact path="/" element={<Home/>}/>
+                <Route path="/roster" element={<Roster/>}/>
+                <Route path="/phantoms" element={<Phantoms/>}/>
+            </Routes>
+        </AnimatePresence>        
     </div>
   );
 }

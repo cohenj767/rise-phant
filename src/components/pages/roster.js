@@ -8,7 +8,7 @@ const membersGrid = {
     hidden: {},
     visible: { 
         transition: {
-            staggerChildren: .08,
+            staggerChildren: .06,
             ease: [.14,.8,.4,1]
       }
     }
@@ -20,7 +20,7 @@ const cardContainer = {
         y: 0,
         opacity: 1,
         transition: {
-            duration: 0.8,
+            duration: 0.6,
             ease: [.14,.8,.4,1]
         },
     },
@@ -90,7 +90,7 @@ function RoleGrid(props){
     return(
         <>
         <motion.ul className="seperator" style={{background: background}} variants={seperator}/>
-        <motion.ul className="membersGrid" variants={membersGrid}>
+        <motion.ul className="membersGrid">
                 {members.filter(members => members.role === props.role).map(card =>(
                     <Card key={card.name} background={background} {...card}/>
                     ))}

@@ -2,8 +2,8 @@ export const picks = [
     {
         id: 1,
         owner: "x_Copy",
-        upgradeLvl: [1000, 1000, 500],
-        isSharing: true,
+        upgradeLvl: [715, 486, 500],
+        isSharing: false,
         firstPrio: "Yycia",
         secondPrio: "bcCloned",
         location: "Shared Plot"
@@ -16,5 +16,5 @@ export const picks = [
         firstPrio: "CoraSN",
         secondPrio: "Qi_Venom",
         location: "Shared Plot"
-    },
+    }
 ]
