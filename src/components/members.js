@@ -95,7 +95,7 @@ export const members = [
     hasPhantom: "false",
 },
 {
-    name: "Thaiharlemc",
+    name: "ThaiMC",
     role: "Member",
     hasPhantom: "false",
 },
@@ -106,6 +106,21 @@ export const members = [
 },
 {
     name: "Liane",
+    role: "Member",
+    hasPhantom: "false",
+},
+{
+    name: "Vertxz",
+    role: "Member",
+    hasPhantom: "false",
+},
+{
+    name: "Butt1Slime",
+    role: "Member",
+    hasPhantom: "false",
+},
+{
+    name: "03OA",
     role: "Member",
     hasPhantom: "false",
 },
