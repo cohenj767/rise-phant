@@ -51,14 +51,10 @@ function Phantom({id, owner, upgradeLvl, isSharing, firstPrio, secondPrio, locat
             <div className="phantContainer mobile-grid">
                 <div className="phantDetails">
                     <span># {id} </span>
-                    {isSharing ? (
-                        <>
                     <div className="line"/>
                     <span><RiUserAddFill/>{" "}Prio 1: {firstPrio}</span>
                     <div className="line"/>
                     <span><RiUserAddFill/>{" "}Prio 2: {secondPrio}</span>
-                    </>
-                    ):(<div/>)}
                 </div>
                 <div className="phantUpgrades">
                     <div className="upgradeCont">

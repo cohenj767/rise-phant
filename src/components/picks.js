@@ -4,8 +4,8 @@ export const picks = [
         owner: "x_Copy",
         upgradeLvl: [715, 486, 500],
         isSharing: false,
-        firstPrio: "Yycia",
-        secondPrio: "bcCloned",
+        firstPrio: "None",
+        secondPrio: "None",
         location: "Shared Plot"
     },
     {

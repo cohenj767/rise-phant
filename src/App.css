@@ -326,7 +326,7 @@ li .current-page-item::after{
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 30% 40% 30%;
-    padding: 2rem;
+    padding: 1rem;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
@@ -350,7 +350,6 @@ li .current-page-item::after{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     font-size: 1.2rem;
     font-weight: 300;
 }
@@ -479,16 +478,23 @@ li .current-page-item::after{
     .phantMisc{
         gap: 1rem;
     }
+
+    .phantDetails{
+        align-items: center !important;
+    }
+    .mobile-gaps{
+        margin: 1rem 3rem 1rem 3rem !important;
+    }
 }
 
 @media only screen and (max-width: 720px) {
     .mobile-gaps{
-        margin: 1rem 1rem 1rem 1rem !important;
+        margin: 1rem !important;
     }
 
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1500px) {
     
     .phantList {grid-template-columns: repeat(2, 1fr) !important; }
 }
