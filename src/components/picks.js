@@ -6,6 +6,15 @@ export const picks = [
         isSharing: false,
         firstPrio: "None",
         secondPrio: "None",
-        location: "Shared Plot"
+        location: "Inventory"
+    },
+    {
+        id: 2,
+        owner: "Prework",
+        upgradeLvl: [1, 1, 1],
+        isSharing: false,
+        firstPrio: "None",
+        secondPrio: "None",
+        location: "Inventory"
     }
 ]
