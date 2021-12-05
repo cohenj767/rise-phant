@@ -2,7 +2,7 @@ export const picks = [
     {
         id: 1,
         owner: "x_Copy",
-        upgradeLvl: [587, 601, 475],
+        upgradeLvl: [623, 601, 529],
         isSharing: false,
         firstPrio: "None",
         secondPrio: "None",
@@ -24,7 +24,7 @@ export const picks = [
         isSharing: false,
         firstPrio: "None",
         secondPrio: "None",
-        location: "ChainArts' Plot"
+        location: "Inventory"
     },
     {
         id: 4,
