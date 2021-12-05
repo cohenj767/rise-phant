@@ -25,5 +25,14 @@ export const picks = [
         firstPrio: "None",
         secondPrio: "None",
         location: "ChainArts' Plot"
+    },
+    {
+        id: 4,
+        owner: "But1Slime",
+        upgradeLvl: [1, 1, 1],
+        isSharing: false,
+        firstPrio: "None",
+        secondPrio: "None",
+        location: "Inventory"
     }
 ]
