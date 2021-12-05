@@ -43,7 +43,7 @@ function Phantom({id, owner, upgradeLvl, isSharing, firstPrio, secondPrio, locat
             shareStatus = "Yos"
     }
 
-    progress = upgradeLvl.reduce((x, y) => x + y)*100 / 2500;
+    progress = upgradeLvl.reduce((x, y) => x + y)*100 / 5000;
 
     return(
         <motion.li className="phantCard" variants={phantCard} whileHover={{scale: 1.02}}>
