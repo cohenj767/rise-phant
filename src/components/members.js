@@ -12,7 +12,7 @@ export const members = [
 {
     name: "ChainArts",
     role: "Co-Leader",
-    hasPhantom: "false",
+    hasPhantom: "true",
 },
 {
     name: "bcCloned",
@@ -87,7 +87,7 @@ export const members = [
 {
     name: "Unorthqdox",
     role: "Member",
-    hasPhantom: "false",
+    hasPhantom: "true",
 },
 {
     name: "Mxtt",
