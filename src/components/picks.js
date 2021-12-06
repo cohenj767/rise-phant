@@ -2,7 +2,7 @@ export const picks = [
     {
         id: 1,
         owner: "x_Copy",
-        upgradeLvl: [771, 733, 643],
+        upgradeLvl: [771, 734, 643],
         isSharing: false,
         firstPrio: "None",
         secondPrio: "None",
